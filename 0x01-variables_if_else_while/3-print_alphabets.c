@@ -18,8 +18,8 @@ int main(void)
 		putchar(alpha + i);
 		i++;
 	}
-	i=0;
-	alpha='A';
+	i = 0;
+	alpha = 'A';
 	while (i < 26)
 	{
 		putchar(alpha + i);
