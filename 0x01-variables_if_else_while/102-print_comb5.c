@@ -19,11 +19,11 @@ int main(void)
 	int num2 = 0;
 
 	alpha = 48;
-	while (i < MAX)
+	for (i = 0; i < MAX; i++)
 	{
-		while (j < MAX)
+		for (j = 0; j < MAX; j++)
 		{
-			while (i2 < MAX)
+			for (i2 =0 ; i2 < MAX ; i2++)
 			{
 				for (j2 = 0 ; j2 < MAX ; j2++)
 				{
@@ -39,12 +39,11 @@ int main(void)
 				if ((num1 * 100 + num2) < 9899)
 				{
 				putchar(',');
-				putchar(' '); } } }
-			i2++; }
-			i2 = 0;
-			j++; }
-		j = 0;
-		i++; }
+				putchar(' '); } } 
+				}
+			}
+		}
+       	}
 	alpha = 10;
 	putchar(alpha);
 	return  (0);
