@@ -23,7 +23,7 @@ int main(void)
 	{
 		for (j = 0; j < MAX; j++)
 		{
-			for (i2 =0 ; i2 < MAX ; i2++)
+			for (i2 = 0 ; i2 < MAX ; i2++)
 			{
 				for (j2 = 0 ; j2 < MAX ; j2++)
 				{
@@ -38,12 +38,12 @@ int main(void)
 				putchar(alpha + j2);
 				if ((num1 * 100 + num2) < 9899)
 				{
-				putchar(',');
-				putchar(' '); } } 
-				}
+					putchar(',');
+					putchar(' ');
+				}}}
 			}
 		}
-       	}
+	}
 	alpha = 10;
 	putchar(alpha);
 	return  (0);
