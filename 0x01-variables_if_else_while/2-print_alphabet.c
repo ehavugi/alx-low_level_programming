@@ -20,5 +20,5 @@ int main(void)
 	}
 	alpha = '\n';
 	putchar(alpha);
-
+	return  (0);
 }
