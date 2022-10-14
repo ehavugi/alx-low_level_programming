@@ -15,10 +15,7 @@ int main(void)
 	alpha = 'z';
 	while (i < 26)
 	{
-		if ((alpha != 'q') && (alpha != 'e'))
-		{
-			putchar(alpha);
-		}
+		putchar(alpha);
 		alpha = alpha - 1;
 		i++;
 	}
