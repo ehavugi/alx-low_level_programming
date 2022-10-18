@@ -8,13 +8,15 @@
  **/
 int main(void)
 {
-	long unsigned int i;
-	char s[20] ="_putchar";
-	char ender[2]="\n";
-	for (i=0;i<strlen(s);i++){
+	unsigned long int i;
+	char s[20] = "_putchar";
+	char ender[2] = "\n";
+
+	for (i = 0; i < strlen(s); i++)
+	{
 		_putchar(s[i]);
 	}
 	_putchar(ender[0]);
 
-	return 0;
+	return (0);
 }
