@@ -2,26 +2,28 @@
 #include <string.h>
 
 /**
- * print_last_digit -- function entry
+ * jack_bauer -- function entry
  *
- * @c : input number
  *
  * Return: 1 if lower 0 otherwise.  Error code otherwise
  **/
-int print_last_digit(int c)
+void jack_bauer()
 {
-	int value_;
+	for(int i ; i < 24, i++)
+	{	if (i < 10)
+		{
+			_putchar('0');
+			_putchar(i+'0');
+			_putchar(':');
+		}
+		else
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+		}
 
-	if (c >= 0)
-	{
-		value_ = c % 10;
-		_putchar(value_ + '0');
-		return (value_);
-	}
-	else
-	{
-		value_ = -1 * (c % 10);
-		_putchar(value_ + '0');
-		return (value_);
+
 	}
 }
+	
