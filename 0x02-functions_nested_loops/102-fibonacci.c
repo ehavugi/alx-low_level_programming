@@ -19,11 +19,11 @@ int main(void)
 	{
 		if (curr == 0)
 		{
-			printf("1,");
+			printf("1, ");
 		}
 		else if (curr == 1)
 		{
-			printf("2,");
+			printf("2, ");
 		}
 		else
 		{
@@ -31,7 +31,7 @@ int main(void)
 			F2 = F0 + F1;
 			if (curr < MAX - 1)
 			{
-				printf("%ld,", F2);
+				printf("%ld, ", F2);
 			}
 			else
 			{
