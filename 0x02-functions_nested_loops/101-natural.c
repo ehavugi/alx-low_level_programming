@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdio.h>
-#define MAX 10
+#define MAX 1024
 
 /**
  * main  -- main  entry
@@ -8,7 +8,7 @@
  *
  * Return: void
  */
-void main(void)
+int main(void)
 {
 	int sum = 0;
 	int curr = 0;
@@ -21,5 +21,6 @@ void main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
 
