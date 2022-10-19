@@ -4,6 +4,8 @@
 /**
  * _islower -- function entry
  *
+ * @c : input alphabet
+ *
  * Return: 1 if lower 0 otherwise.  Error code otherwise
  **/
 int  _islower(int c)
