@@ -19,17 +19,24 @@ int main(void)
 	{
 		if (curr == 0)
 		{
-			printf("1\n");
+			printf("1,");
 		}
 		else if (curr == 1)
 		{
-			printf("2\n");
+			printf("2,");
 		}
 		else
 		{
 			/* Get current Fib Num */
 			F2 = F0 + F1;
-			printf("%ld\n", F2);
+			if (curr < MAX - 1)
+			{
+				printf("%ld,", F2);
+			}
+			else
+			{
+				printf("%ld\n", F2);
+			}
 
 			/* Update the fib value by previous fib */
 			F0 = F1;
