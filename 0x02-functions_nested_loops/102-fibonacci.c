@@ -16,7 +16,8 @@ int main(void)
 	int curr;
 
 	for (curr = 0; curr < MAX; curr++)
-	{	if (curr == 0)
+	{
+		if (curr == 0)
 		{
 			printf("1\n");
 		}
