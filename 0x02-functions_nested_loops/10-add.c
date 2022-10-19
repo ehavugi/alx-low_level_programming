@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _abs -- function entry
+ * add -- function entry
  *
  * @a : input number 1
  * @b : input number 2
