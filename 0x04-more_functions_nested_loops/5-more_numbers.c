@@ -1,5 +1,5 @@
 #include "main.h"
-#define TIMES 10 
+#define TIMES 10
 
 /**
  * more_numbers- returns none.print 0 to 9
