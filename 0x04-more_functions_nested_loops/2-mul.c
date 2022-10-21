@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul returns  sum of inputs
+ * mul - returns  sum of inputs
  * @a: input 1
  * @b: input 2
  * Return:a+b
