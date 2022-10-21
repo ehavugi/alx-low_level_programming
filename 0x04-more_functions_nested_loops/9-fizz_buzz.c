@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MAX_VALUE 100
 
 /**
  * main - return void, print numbers 0 to 100 and fizz, buzz
@@ -9,7 +10,7 @@ int main(void)
 {
 	int index;
 
-	for (index = 1; index <= 100; index++)
+	for (index = 1; index <= MAX_VALUE; index++)
 	{
 		if ((index % 3) == 0)
 		{
@@ -23,7 +24,10 @@ int main(void)
 		{
 			printf("%d", index);
 		}
-		printf(" ");
+		if (index < MAX_VALUE)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
