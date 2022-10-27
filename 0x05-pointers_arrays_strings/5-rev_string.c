@@ -16,7 +16,7 @@ void rev_string(char *s)
 	{
 		length += 1;
 	}
-	for (index = 0; index <= (length / 2); index++)
+	for (index = 0; index < (length - 1 - index); index++)
 	{
 		interm = s[index];
 		s[index] = s[length - 1 - index];
