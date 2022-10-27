@@ -9,17 +9,17 @@
 void print_number(int n)
 {
 	int depth = 0;
-	int n_new = n;
+	unsigned int n_new;
 	int interm = 0;
 
 	/* Handle special case of signed value */
 	if (n < 0)
 	{
 		n = -1 * n;
-		n_new = n;
 		_putchar('-');
 
 	}
+	n_new = n;
 
 	/* Get depth or 10's of a number */
 	while (n / 10 != 0)
