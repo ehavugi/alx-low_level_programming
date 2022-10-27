@@ -8,7 +8,7 @@
 void print_rev(char *s)
 {
 	int length = 0;
-	int index = 0;
+	int index = 1;
 
 	/* Find the length of string */
 	while (s[length] != '\0')
