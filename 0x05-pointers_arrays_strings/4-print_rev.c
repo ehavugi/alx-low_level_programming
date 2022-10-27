@@ -16,9 +16,9 @@ void print_rev(char *s)
 		length += 1;
 	}
 	/* Reverse the string */
-	while (index < length - 1)
+	while (index <= length)
 	{
-		_putchar(s[length - index - 1]);
+		_putchar(s[length - index]);
 		index += 1;
 	}
 	_putchar('\n');
