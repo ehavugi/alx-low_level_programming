@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
  * _strstr - locate a substring
  * @haystack: string to search in
@@ -13,7 +12,7 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int current = 0;
 	unsigned int current2 = 0;
 	unsigned int max = 0;
-	char *out = NULL;
+	char *out ='\0';
 
 	while (haystack[index] != '\0')
 	{
