@@ -9,7 +9,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int index = 0;
 	unsigned int index2 = 0;
-	unsigned int current = 0;
 	unsigned int current2 = 0;
 	unsigned int max = 0;
 	char *out ='\0';
@@ -20,10 +19,6 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (haystack[index] == needle[index2])
 			{
-				if (current2 == 0)
-				{
-					current = index;
-				}
 				if (current2 == index2)
 				{
 					current2 += 1; }
@@ -32,7 +27,7 @@ char *_strstr(char *haystack, char *needle)
 					current2 = 0; }
 				if (max  == current2)
 				{
-					out = &haystack[current];
+					out = needle;
 					return (out);
 				}
 			}
