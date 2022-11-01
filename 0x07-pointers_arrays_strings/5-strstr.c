@@ -13,14 +13,14 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int current = 0;
 	unsigned int current2 = 0;
 	unsigned int max = 0;
-	char *out;
+	char *out = NULL;
 
 	while (haystack[index] != '\0')
 	{
 		while (needle[index2] != '\0')
 		{
 			if (haystack[index] == needle[index2])
-			{/*printf("%d, %d, %d, %d \n", index, index2, current, current2);*/
+			{
 				if (current2 == 0)
 				{
 					current = index;
@@ -46,5 +46,5 @@ char *_strstr(char *haystack, char *needle)
 		index2 = 0;
 		index += 1;
 	}
-	return ('\0');
+	return (out);
 }
