@@ -24,7 +24,7 @@ int prime(int x, int y)
 
 /**
  * is_prime_number - return 1 if prime
- * n: input
+ * @n:input
  *
  * Return: 1 if prime else 0
  */
