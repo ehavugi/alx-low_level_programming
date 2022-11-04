@@ -2,6 +2,7 @@
 /**
  * main - main function
  * @argc: number of arguments
+ * @argv: array of strings
  *
  * Return: Always 0.
  */
