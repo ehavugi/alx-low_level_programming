@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _atoi - return number in string. like atoi in the standard library
  * @s: string input
@@ -35,8 +36,6 @@ int _atoi(char *s)
 	}
 	return (current_int * sign);
 }
-#include "main.h"
-#include <stdio.h>
 
 /**
  * main - main function
