@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
-				printf("Error, %d, %d\n", index, argc);
+				printf("Error\n");
 				return (1);
 			}
 			index += 1;
