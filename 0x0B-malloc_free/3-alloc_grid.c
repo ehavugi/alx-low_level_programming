@@ -9,12 +9,16 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **grid;
 	int x = 0;
 	int y = 0;
+	int **grid = (int **) malloc(width * sizeof(int *));
 
-	grid = malloc(width * height * sizeof(int));
-	printf("grid %d, %d ,%ld \n", width, height, sizeof(grid));
+	while (x < width)
+	{
+		grid[x] = (int *) malloc(height * sizeof(int));
+		x++;
+	}
+	x = 0;
 
 	if (width < 0 || height < 0 || (grid == NULL))
 	{
@@ -29,16 +33,13 @@ int **alloc_grid(int width, int height)
 	{
 		while (y < height)
 		{
-			printf("wow\n");
-			grid[x][y]= 0;
-			printf("%d, %d\n", x, y);
+			grid[y][x] = 0;
+
 			y++;
 		}
 		x++;
 		y = 0;
 	}
-	printf("%d, %d\n", width, height);
-	printf("%d\n", grid[1][1]);
 	return (grid);
 
 }
