@@ -24,8 +24,6 @@ int _strlen(char *str)
  * Return: pointer to newly allocated mem contaings s1 concat s2
  */
 
-
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *out;
@@ -34,39 +32,37 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int mem;
 	unsigned int index = 0;
 
+	if (s1 == NULL)
+	{
+		s1 = ""; }
+
+	if (s2 == NULL)
+	{
+		s2 = ""; }
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
-
 	if (size2 > n)
 	{
-		mem = size1 + n + 1;
-	}
+		mem = size1 + n + 1; }
 	else
 	{
-		mem = size1 + size2 + 1;
-	}
+		mem = size1 + size2 + 1; }
 
 	out = malloc(mem);
 	if (out == NULL)
 	{
-		return (NULL);
-	}
-	else
+		return (NULL); }
+	while (index < size1)
 	{
-		while (index < size1)
-		{
-			out[index] = s1[index];
-			index += 1;
-		}
-		index = 0;
-		while (index + size1 < mem - 1)
-		{
-			out[index + size1] = s2[index];
-			index += 1;
-		}
-		out[mem - 1] = '\0';
+		out[index] = s1[index];
+		index += 1; }
+
+	index = 0;
+	while (index + size1 < mem - 1)
+	{
+		out[index + size1] = s2[index];
+		index += 1;
 	}
+	out[mem - 1] = '\0';
 	return (out);
 }
-
-
