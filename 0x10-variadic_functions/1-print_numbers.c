@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * print_numbers - print numbers
  * @separator: seperator to use
@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			if (*separator != '\0')
+			if (separator != NULL)
 			{
 				printf("%s", separator);
 			}
