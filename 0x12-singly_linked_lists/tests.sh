@@ -25,6 +25,8 @@ rm ./d
 echo "task 4"
 echo "-=====-"
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
+valgrind ./e
+rm ./e
 
 echo "task 5"
 echo "-----"
@@ -38,4 +40,4 @@ echo "------"
 nasm -f elf64 101-hello_holberton.asm && gcc -no-pie -std=gnu89 101-hello_holberton.o -o hello
 ./hello
 rm 101-hello_holberton.o
-rm /hello
+rm ./hello

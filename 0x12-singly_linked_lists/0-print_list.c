@@ -10,7 +10,6 @@
  *
  * Return: return size of the list
  */
-
 size_t print_list(list_t *h)
 {
 	size_t index  = 0;
@@ -36,8 +35,6 @@ size_t print_list(list_t *h)
 		x = x->next;
 		printf("[%u] %s\n", x->len, x->str);
 		index += 1;
-
 	}
-
 	return (index);
 }

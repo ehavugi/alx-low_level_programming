@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -23,16 +24,16 @@ int _strlen(char *str)
 }
 
 /**
- * add_node - add node at beginning
+ * add_node_end - add node at beginning
  * @head: current head
  * @str: new string
  *
  * Return: return new list
  */
-list_t *add_node(list_t **head, char *str)
+list_t *add_node_end(list_t **head, char *str)
 {
 	list_t *new;
-
+	list_t *x = *head;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
@@ -40,7 +41,16 @@ list_t *add_node(list_t **head, char *str)
 	}
 	new->str = strdup(str);
 	new->len = _strlen(str);
-	new->next = *head;
-	*head = new;
+	new->next = NULL;
+	if (*head == NULL)
+	{
+		*head = new;
+		return (*head);
+	}
+	while(x->next!=NULL)
+	{
+		x = x->next;
+	}
+	x->next = new;
 	return (*head);
 }
