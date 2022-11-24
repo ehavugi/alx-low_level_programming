@@ -4,7 +4,7 @@
 #include <string.h>
 #include "lists.h"
 
-/*
+/**
  * print_list - print a linked list
  * @h: input
  *
@@ -13,8 +13,9 @@
 
 size_t print_list(list_t *h)
 {
-	size_t index  = 0 ;
+	size_t index  = 0;
 	list_t *x = h;
+
 	if (h == NULL)
 	{
 		return (0);
@@ -28,7 +29,6 @@ size_t print_list(list_t *h)
 		printf("[%u] %s\n", h->len, h->str);
 
 	}
-	
 	index += 1;
 
 	while (x->next != NULL)

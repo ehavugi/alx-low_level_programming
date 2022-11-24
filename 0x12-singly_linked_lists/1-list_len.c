@@ -7,10 +7,11 @@
  * Return: number of elements
  */
 
-size_t list_len( list_t *h)
+size_t list_len(list_t *h)
 {
 	size_t len = 0;
 	list_t *x = h;
+
 	if (x != NULL)
 	{
 		len += 1;
