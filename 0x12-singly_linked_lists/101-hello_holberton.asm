@@ -6,8 +6,6 @@ main:
 	mov rdi, message
 	mov al, 0
 	call printf
-	mov eax, 1
-	mov ebx, 0
-	int 80h
+	ret
 message:
 	db "Hello, Holberton",10,0
