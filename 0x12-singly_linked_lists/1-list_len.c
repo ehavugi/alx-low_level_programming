@@ -12,6 +12,10 @@ size_t list_len(list_t *h)
 	size_t len = 0;
 	list_t *x = h;
 
+	if (h == NULL)
+	{
+		return (len);
+	}
 	if (x != NULL)
 	{
 		len += 1;
