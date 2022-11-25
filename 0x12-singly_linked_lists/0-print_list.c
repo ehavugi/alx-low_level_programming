@@ -21,7 +21,7 @@ size_t print_list(list_t *h)
 	}
 	if (h->str == NULL)
 	{
-		printf("[%u] (nil)\n", h->len);
+		printf("[0] (nil)\n");
 	}
 	else
 	{
@@ -33,7 +33,14 @@ size_t print_list(list_t *h)
 	while (x->next != NULL)
 	{
 		x = x->next;
-		printf("[%u] %s\n", x->len, x->str);
+		if (x->str ==  NULL)
+		{
+			printf("[0] (nill)\n");
+		}
+		else
+		{
+			printf("[%u] %s\n", x->len, x->str);
+		}
 		index += 1;
 	}
 	return (index);
