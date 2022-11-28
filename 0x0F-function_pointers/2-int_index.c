@@ -1,3 +1,4 @@
+#include<stdlib.h>
 /**
  * int_index - int index
  * @array: array to search in
@@ -10,6 +11,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index = 0;
 
+	if (array == NULL || cmp == NULL || size <= 0)
+	{
+		return (-1);
+	}
 	while (index < size)
 	{
 		if (cmp(array[index]) != 0)
