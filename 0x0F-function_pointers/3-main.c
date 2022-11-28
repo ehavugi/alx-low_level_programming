@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	{
 		result = get_op_func(argv[2])(a, b);
 		printf("%d\n", result);
-		exit(result);
+		return (0);
 	}
 	else
 	{
