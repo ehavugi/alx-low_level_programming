@@ -31,7 +31,14 @@ int main(int argc, char *argv[])
 	op = (unsigned char  *)(&main);
 	for (i = 0; i < n; i++)
 	{
-		printf("%02x ",*(op+ i));
+		if (i == 0)
+		{
+			printf("%02x", *(op + i));
+		}
+		else
+		{
+			printf(" %02x", *(op + i));
+		}
 	}
 	printf("\n");
 	return (0);
