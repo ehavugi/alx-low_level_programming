@@ -31,5 +31,10 @@ int main(void)
     print_listint(head);
     free_listint2(&head);
     printf("%p\n", (void *)head);
+    head = NULL;
+
+    n = pop_listint(&head);;
+
+    printf("%d\n", n);
     return (0);
 }
