@@ -27,3 +27,13 @@ echo "test 5"
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-flip_bits.c -o f
 ./f
 rm ./f
+
+echo "test 6"
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-get_endianness.c -o h
+./h
+rm ./h
+
+lscpu | head
+
+echo "test 7"
+./crackme3 `cat 101-password`
