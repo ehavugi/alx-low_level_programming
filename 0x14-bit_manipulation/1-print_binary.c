@@ -10,7 +10,8 @@ void print_binary(unsigned long int n)
 {
 	int len = 0;
 	unsigned int value = 0;
-	while ((n>>len) > 0)
+
+	while ((n >> len) > 0)
 	{
 		len += 1;
 	}
@@ -20,7 +21,7 @@ void print_binary(unsigned long int n)
 		len -= 1;
 		if (value <= 1)
 		{
-			_putchar('0'+value);
+			_putchar('0' + value);
 		}
 	}
 
