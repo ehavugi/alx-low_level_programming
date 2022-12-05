@@ -15,12 +15,22 @@ rm ./b
 
 echo "test 2"
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-append_text_to_file.c -o c
+echo -n Hello > hello
+ ls -l hello
 ./c hello  World!
 cat hello
 rm ./c
+rm ./hello
 
+echo ""
 echo "test 3"
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-cp.c -o cp
+cat incitatous
+./cp incitatous Incitatous
+ls -l Incitatous
+cat Incitatous
+rm ./cp
+rm Incitatous
 
 echo "test 4"
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-elf_header.c -o elf_header
