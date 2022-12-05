@@ -20,6 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	char *buf = malloc(letters);
 	ssize_t n = 0;
+	ssize_t n2 = 0;
 
 	if (filename == NULL)
 	{
@@ -32,7 +33,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	n = read(fd, buf, letters);
-	n = write(1, buf, n);
+	n2 = write(1, buf, n);
+	if (n2 != n)
+	{
+		return (0);
+	}
 	/*exit or close */
 	free(buf);
 	close(fd);
