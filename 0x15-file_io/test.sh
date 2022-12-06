@@ -43,3 +43,4 @@ readelf -h /lib/ld-linux.so.2
  ./elf_header sortix32
  ./elf_header solaris32
  ./elf_header sparc32
+ rm ./elf_header

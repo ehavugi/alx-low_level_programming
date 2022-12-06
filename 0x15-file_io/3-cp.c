@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	/*create file handle for writing to */
 
-	fd2 = open(argv[2], O_CREAT | O_WRONLY, 0600);
+	fd2 = open(argv[2], O_CREAT | O_WRONLY, 0664);
 
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
