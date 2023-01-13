@@ -13,6 +13,10 @@ size_t dlistint_len(dlistint_t *h)
 	size_t n;
 
 	n = 0;
+	if (curr == NULL)
+	{
+		return (0);
+	}
 	while (curr->prev != NULL)
 	{
 		curr  = curr->prev;
